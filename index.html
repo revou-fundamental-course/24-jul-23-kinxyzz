@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Logo</div>
+      <nav class="nav">
+        <p></p>
+        <a href="#home">Home</a>
+        <a href="#ourpackage">Our Package</a>
+        <a href="#call">Call Us</a>
+      </nav>
+      <div class="hamburger-menu">
+        <button>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+      </div>
+    </header>
+    <main id="home">
+      <section class="containermain">
+        <section class="headline">
+          <h1>Globetrotter Adventures</h1>
+          <h2>Discover the World Anew</h2>
+        </section>
+        <section class="heroku">
+          <div class="kananhero">
+            <div class="sliderku">
+              <img
+                class="mySlides"
+                src="./assets/img/carouselone.jpg"
+                style="width: 100%"
+              />
+              <img
+                class="mySlides"
+                src="./assets/img/carouseltwo.jpg"
+                style="width: 100%"
+              />
+              <img
+                class="mySlides"
+                src="./assets/img/carouseltri.jpg"
+                style="width: 100%"
+              />
+
+              <button class="button left" id="buttonleft"><</button>
+              <button class="button right" id="buttonright">></button>
+            </div>
+            <div class="textreview">
+              <p>"Liburan Jadi Sangat Menyenangkan Dengan Travel Agentku"</p>
+              <div class="profileorang">
+                <div class="bgkosong"></div>
+                <div>
+                  <h2>Arina Sukamaju</h2>
+                  <p>ibu rumah barbie, 28</p>
+                </div>
+              </div>
+            </div>
+            <div class="forborder"></div>
+            <div class="textfeature">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                ex enim laudantium facere quis blanditiis ipsa quam quidem,
+                corrupti libero.
+              </h4>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                  laborum!
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                  laborum!
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                  laborum!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="kirihero">
+            <div class="formcard">
+              <div>
+                <h3>Contact Us</h3>
+                <p>
+                  Agent kita akan menghubungi anda dalam 1 x 24 jam setelah anda
+                  mengirim pesan
+                </p>
+              </div>
+              <form onsubmit="return validateForm()" action="">
+                <label for="name">Your name: </label>
+                <input type="text" id="name" placeholder="Your Name" />
+                <label for="email">Your email: </label>
+                <input type="email" placeholder="yourr@example.com" />
+                <label for="travel-select">what are you interested in?</label>
+                <select id="travel-select" name="map">
+                  <option value="defaultoption">default option</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Japan">Japan</option>
+                </select>
+                <button class="buttonsend" type="submit">Send</button>
+              </form>
+              <p id="error-msg"></p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- this is ourpackage -->
+    <section class="ourpackage" id="ourpackage">
+      <h2>Our Package</h2>
+    </section>
+    <!-- akhir ourpackage -->
+    <!-- this is traveleroption -->
+    <section class="travelgo">
+      <div class="travelercardcontainer">
+        <div class="cardsection">
+          <div class="cardtravel">
+            <div class="bungkuslogo">
+              <div class="iconlogo"></div>
+            </div>
+            <div class="cardtraveltext">
+              <h2>Bali</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+                inventore!
+              </p>
+            </div>
+            <img src="./assets/img/bali.jpg" alt="bali" />
+          </div>
+          <div class="cardtravel">
+            <div class="bungkuslogo">
+              <div class="iconlogo"></div>
+            </div>
+            <div class="cardtraveltext">
+              <h2>Japan</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+                inventore!
+              </p>
+            </div>
+            <img src="./assets/img/jepang.jpg" alt="jepang" />
+          </div>
+          <div class="cardtravel">
+            <div class="bungkuslogo">
+              <div class="iconlogo"></div>
+            </div>
+            <div class="cardtraveltext">
+              <h2>Singapore</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+                inventore!
+              </p>
+            </div>
+            <img src="./assets/img/singapore.jpg" alt="singapore" />
+          </div>
+        </div>
+        <div class="forbordert"></div>
+        <div class="cardsection">
+          <div class="cardtravel">
+            <div class="bungkuslogo">
+              <div class="iconlogo"></div>
+            </div>
+            <div class="cardtraveltext">
+              <h2>Swiss</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+                inventore!
+              </p>
+            </div>
+            <img src="./assets/img/swiss.jpg" alt="swiss" />
+          </div>
+          <div class="cardtravel">
+            <div class="bungkuslogo">
+              <div class="iconlogo"></div>
+            </div>
+            <div class="cardtraveltext">
+              <h2>China</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+                inventore!
+              </p>
+            </div>
+            <img src="./assets/img/china.jpg" alt="china" />
+          </div>
+          <div class="cardtravel">
+            <div class="bungkuslogo">
+              <div class="iconlogo"></div>
+            </div>
+            <div class="cardtraveltext">
+              <h2>Third Feature</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+                inventore!
+              </p>
+            </div>
+            <img src="./assets/img/moremap.jpg" alt="moremap" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of traveleroption -->
+    <!-- mulai closing argument headline -->
+    <section class="closingcontainer" id="call">
+      <div class="closingcontent">
+        <h2>Your Closing Argument Headline</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi,
+          mollitia. Blanditiis libero reiciendis iure aperiam, minima temporibus
+          harum neque earum.
+        </p>
+        <button class="callbutton">CALL TO ACTION</button>
+      </div>
+    </section>
+    <!-- end closing argument headline -->
+    <footer>
+      <div class="footcontainer">
+        <div class="logo">Logo</div>
+        <div class="footerlink">
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+        </div>
+        <p>©2019 kinxyzz</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
