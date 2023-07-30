@@ -53,6 +53,9 @@ function validateForm() {
   const selectedValue = selectElement.value;
   const errorMessageElement = document.getElementById("error-msg");
 
+  const emailInput = document.getElementById("email");
+  const emailValue = emailInput.value.trim();
+
   if (nameValue === "") {
     errorMessageElement.innerHTML = "Nama tidak boleh kosong.";
     return false;
@@ -60,6 +63,12 @@ function validateForm() {
 
   if (selectedValue === "defaultoption") {
     errorMessageElement.innerHTML = "Anda belum memilih option";
+    return false;
+  }
+
+  const stringemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!stringemail.test(emailValue)) {
+    errorMessageElement.innerHTML = "Masukkan alamat email yang valid.";
     return false;
   }
 
